@@ -30,15 +30,6 @@ const LearningHeader = ({
   courseOrg, courseNumber, courseTitle, intl, showUserDropdown,
 }) => {
   const { authenticatedUser } = useContext(AppContext);
-
-  const headerLogo = (
-    <LinkedLogo
-      className="logo"
-      href={`${getConfig().LMS_BASE_URL}/dashboard`}
-      src={getConfig().LOGO_URL}
-      alt={getConfig().SITE_NAME}
-    />
-  );
   
   return (
     <AppProvider store={store}>
